@@ -7,7 +7,10 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_wall_1</sprite>
+    <sprite>sprites\spr_solid_2</sprite>
     <sprite>sprites\spr_block</sprite>
+    <sprite>sprites\spr_block_2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -20,8 +23,15 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_solid</object>
-    <object>objects\obj_control</object>
+    <objects name="solid lvls">
+      <object>objects\obj_solid_1</object>
+      <object>objects\obj_solid_2</object>
+    </objects>
     <object>objects\obj_block</object>
+    <objects name="block lvls">
+      <object>objects\obj_block_2</object>
+    </objects>
+    <object>objects\obj_control</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

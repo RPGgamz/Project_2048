@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>lvl = 1;
 image_speed = 0;
-
-stop = false
+stop = false;
+combine_lock = false;
 </string>
           </argument>
         </arguments>

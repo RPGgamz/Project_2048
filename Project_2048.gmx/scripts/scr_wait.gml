@@ -26,6 +26,7 @@ if (keyboard_check_pressed(vk_anykey)) {
         state = scr_slide;
         with (obj_block) {
             stop = false;
+            combine_lock = false
         }
         scr_slide();
     }

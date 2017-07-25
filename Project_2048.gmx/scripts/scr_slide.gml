@@ -68,6 +68,7 @@ for (var i = 0; i < instance_number(obj_block)-1; i += 1) {
         mario.lvl += 1;
         mario.stop = true;
         mario.image_index = mario.lvl - 1;
+        mario.combine_lock = true;
     }
 }
 
@@ -81,13 +82,15 @@ with (argument2){
     var dx = argument0;
     var dy = argument1;
     
-    if (place_meeting(x+dx, y+dy, obj_solid)) { //collide with solid
-        return(true);
+    //collide with solid
+    var broman = instance_place(x+dx, y+dy, obj_solid);
+    if (instance_exists(broman)) {
+        if (broman.lvl != lvl) return(true);
     }
     //collide with other block
     var broman = instance_place(x+dx, y+dy, obj_block);
     if (instance_exists(broman)) {
-        if (broman.lvl != lvl) {
+        if (broman.lvl != lvl or broman.combine_lock) {
             if(broman.stop) return(true);
             if (scr_collision_check(dx, dy, broman)) {
                 broman.stop = true;
