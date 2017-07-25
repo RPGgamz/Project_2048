@@ -11,6 +11,7 @@
     <sprite>sprites\spr_solid_2</sprite>
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_block_2</sprite>
+    <sprite>sprites\spr_block_0</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -30,11 +31,13 @@
     <object>objects\obj_block</object>
     <objects name="block lvls">
       <object>objects\obj_block_2</object>
+      <object>objects\obj_block_0</object>
     </objects>
     <object>objects\obj_control</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\rm_one_way_door</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -90,7 +90,7 @@ with (argument2){
     //collide with other block
     var broman = instance_place(x+dx, y+dy, obj_block);
     if (instance_exists(broman)) {
-        if (broman.lvl != lvl or broman.combine_lock) {
+        if (broman.lvl != lvl or broman.combine_lock or lvl = 0) {
             if(broman.stop) return(true);
             if (scr_collision_check(dx, dy, broman)) {
                 broman.stop = true;
