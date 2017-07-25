@@ -1,0 +1,2 @@
+
+state = scr_wait;
