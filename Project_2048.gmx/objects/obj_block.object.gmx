@@ -34,62 +34,6 @@ stop = false
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///State
-
-switch (obj_control.state){
-    case scr_wait:
-    case scr_post_slide:
-        break;
-    case scr_slide:
-        //Move
-        if (!stop){
-            switch (obj_control.slide_dir) {
-                case "left":
-                    x -= 8;
-                    break;
-                case "right":
-                    x += 8;
-                    break;
-                case "up":
-                    y -= 8;
-                    break;
-                case "down":
-                    y += 8;
-                    break;
-            }
-            //Combine
-            for (i = 0; i &lt; instance_number(obj_block); i += 1) {
-                var broman = instance_find(obj_block, i);
-                if !(broman != self &amp;&amp; broman.lvl = lvl &amp;&amp; broman.x = x &amp;&amp; broman.y = y) continue;
-                with (broman) instance_destroy();
-                lvl += 1;
-                stop = true;
-                image_index = lvl - 1;
-            }
-        }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
