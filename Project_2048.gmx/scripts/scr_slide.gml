@@ -5,24 +5,24 @@ with (obj_block) {
     if (!stop) {
         switch (obj_control.slide_dir){
             case "left":
-                var dx = -1
+                var dx = -17
                 var dy = 0
                 break;
             case "right":
-                var dx = +1
+                var dx = +16
                 var dy = 0
                 break;
             case "up":
                 var dx = 0
-                var dy = -1
+                var dy = -17
                 break;
             case "down":
                 var dx = 0
-                var dy = +1
+                var dy = +16
                 break;        
         }
         
-        stop = scr_collision_check(dx, dy, id); //Maybe just move this into the switch?
+        stop = scr_stop_check(dx, dy, id); //Maybe just move this into the switch?
     }
 }
 
@@ -74,8 +74,8 @@ for (var i = 0; i < instance_number(obj_block)-1; i += 1) {
 
 
 
-#define scr_collision_check
-///scr_collision_check(dx, dy, obj)
+#define scr_stop_check
+///scr_stop_check(dx, dy, obj)
 
 with (argument2){
     
@@ -83,16 +83,16 @@ with (argument2){
     var dy = argument1;
     
     //collide with solid
-    var broman = instance_place(x+dx, y+dy, obj_solid);
+    var broman = instance_position(x+dx, y+dy, obj_solid);
     if (instance_exists(broman)) {
         if (broman.lvl != lvl) return(true);
     }
     //collide with other block
-    var broman = instance_place(x+dx, y+dy, obj_block);
+    var broman = instance_position(x+dx, y+dy, obj_block);
     if (instance_exists(broman)) {
         if (broman.lvl != lvl or broman.combine_lock or lvl = 0) {
             if(broman.stop) return(true);
-            if (scr_collision_check(dx, dy, broman)) {
+            if (scr_stop_check(dx, dy, broman)) {
                 broman.stop = true;
                 return(true);
             }
