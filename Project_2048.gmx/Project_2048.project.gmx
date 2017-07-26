@@ -45,8 +45,6 @@
     <room>rooms\room4</room>
     <room>rooms\room3</room>
     <room>rooms\room0</room>
-    <room>rooms\room2</room>
-    <room>rooms\rm_one_way_door</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
