@@ -72,6 +72,12 @@ for (var i = 0; i < instance_number(obj_block)-1; i += 1) {
     }
 }
 
+//Do trash things
+with (obj_trash) {
+    var broman = instance_position(x, y, obj_block);
+    with (broman) instance_destroy();
+}
+
 
 
 #define scr_stop_check
