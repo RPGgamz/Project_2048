@@ -13,6 +13,7 @@
     <sprite>sprites\spr_solid_4</sprite>
     <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_block_2</sprite>
+    <sprite>sprites\spr_block_3</sprite>
     <sprite>sprites\spr_block_0</sprite>
   </sprites>
   <backgrounds name="background">
@@ -39,10 +40,12 @@
       <object>objects\obj_block_0</object>
       <object>objects\obj_block_1</object>
       <object>objects\obj_block_2</object>
+      <object>objects\obj_block_3</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room5</room>
+    <room>rooms\room6</room>
     <room>rooms\room4</room>
     <room>rooms\room3</room>
   </rooms>
