@@ -1,45 +1,53 @@
 #define scr_slide
 
-//All blocks collision
-with (obj_block) {
-    if (!stop) {
-        switch (obj_control.slide_dir){
-            case "left":
-                var dx = -17
-                var dy = 0
-                break;
-            case "right":
-                var dx = +16
-                var dy = 0
-                break;
-            case "up":
-                var dx = 0
-                var dy = -17
-                break;
-            case "down":
-                var dx = 0
-                var dy = +16
-                break;        
+//Count frames
+
+tick_count ++;
+if (tick_count = 4) tick_count = 0;
+
+//If tick count is 0, check which blocks should stop
+if (tick_count = 0) {
+    //All blocks collision
+    with (obj_block) {
+        if (!stop) {
+            switch (obj_control.slide_dir){
+                case "left":
+                    var dx = -17
+                    var dy = 0
+                    break;
+                case "right":
+                    var dx = +16
+                    var dy = 0
+                    break;
+                case "up":
+                    var dx = 0
+                    var dy = -17
+                    break;
+                case "down":
+                    var dx = 0
+                    var dy = +16
+                    break;        
+            }
+            
+            stop = scr_stop_check(dx, dy, id); //Maybe just move this into the switch?
         }
-        
-        stop = scr_stop_check(dx, dy, id); //Maybe just move this into the switch?
+    }
+    
+    //Check if all blocks have stopped/ end slide-state
+    var stop_slide_state = true;
+    for (var i = 0; i < instance_number(obj_block); i += 1) {
+        if (!instance_find(obj_block, i).stop) {
+            stop_slide_state = false;
+            break;
+        }
+    }
+    if (stop_slide_state) {
+        state = scr_post_slide;
+        exit;
     }
 }
 
-//Check if all blocks have stopped
-var stop_slide_state = true;
-for (var i = 0; i < instance_number(obj_block); i += 1) {
-    if (!instance_find(obj_block, i).stop) {
-        stop_slide_state = false;
-        break;
-    }
-}
-if (stop_slide_state) {
-    state = scr_post_slide;
-    exit;
-}
-
-//All blocks move
+//Move all blocks
 with (obj_block){
     if (!stop){
         switch (obj_control.slide_dir) {
@@ -58,6 +66,7 @@ with (obj_block){
         }
     }
 }
+
 //Combine blocks
 for (var i = 0; i < instance_number(obj_block)-1; i += 1) {
     var mario = instance_find(obj_block, i);
@@ -79,8 +88,6 @@ with (obj_trash) {
     var broman = instance_position(x, y, obj_block);
     with (broman) instance_destroy();
 }
-
-
 
 #define scr_stop_check
 ///scr_stop_check(dx, dy, obj)

@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Create event
 state = scr_wait;
+tick_count = 0;
 </string>
           </argument>
         </arguments>

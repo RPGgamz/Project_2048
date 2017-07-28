@@ -23,7 +23,6 @@ if (keyboard_check_pressed(vk_anykey)) {
     }
     
     if (!wrongkey) {
-        state = scr_slide;
         with (obj_block) {
             if (!frozen) stop = false;
             else stop = true;
@@ -33,6 +32,8 @@ if (keyboard_check_pressed(vk_anykey)) {
             // ---- */
             combine_lock = false
         }
+        tick_count = -1;
+        state = scr_slide;
         scr_slide();
     }
 }
