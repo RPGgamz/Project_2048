@@ -65,10 +65,12 @@ for (var i = 0; i < instance_number(obj_block)-1; i += 1) {
         var broman = instance_find(obj_block, j);
         if !(broman.lvl = mario.lvl && broman.x = mario.x && broman.y = mario.y) continue;
         with (broman) instance_destroy();
-        mario.lvl += 1;
         mario.stop = true;
-        mario.image_index = mario.lvl - 1;
         mario.combine_lock = true;
+        mario.frozen = false;
+        mario.lvl += 1;
+        mario.sprite_index = spr_block
+        mario.image_index = mario.lvl - 1;
     }
 }
 

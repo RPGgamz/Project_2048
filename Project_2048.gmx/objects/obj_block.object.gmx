@@ -26,10 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>lvl = 1;
-image_speed = 0;
 stop = false;
 combine_lock = false;
+frozen = false;
+
 mask_index = spr_block_mask;
+image_speed = 0;
+
 </string>
           </argument>
         </arguments>

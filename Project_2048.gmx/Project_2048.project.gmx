@@ -21,6 +21,10 @@
     <sprite>sprites\spr_trash_0</sprite>
     <sprite>sprites\spr_trash_1</sprite>
     <sprite>sprites\spr_trash_2</sprite>
+    <sprite>sprites\spr_fblock</sprite>
+    <sprite>sprites\spr_fblock_2</sprite>
+    <sprite>sprites\spr_fblock_3</sprite>
+    <sprite>sprites\spr_fblock_4</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -33,6 +37,7 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_solid</object>
+    <object>objects\obj_trash</object>
     <object>objects\obj_block</object>
     <object>objects\obj_control</object>
     <objects name="solid lvls">
@@ -42,22 +47,27 @@
       <object>objects\obj_solid_3</object>
       <object>objects\obj_solid_4</object>
     </objects>
+    <objects name="trash lvls">
+      <object>objects\obj_trash_0</object>
+      <object>objects\obj_trash_1</object>
+      <object>objects\obj_trash_2</object>
+    </objects>
     <objects name="block lvls">
       <object>objects\obj_block_0</object>
       <object>objects\obj_block_1</object>
       <object>objects\obj_block_2</object>
       <object>objects\obj_block_3</object>
     </objects>
-    <object>objects\obj_trash</object>
-    <objects name="trash lvls">
-      <object>objects\obj_trash_0</object>
-      <object>objects\obj_trash_1</object>
-      <object>objects\obj_trash_2</object>
+    <objects name="frozen block lvls">
+      <object>objects\obj_fblock_1</object>
+      <object>objects\obj_fblock_2</object>
+      <object>objects\obj_fblock_3</object>
+      <object>objects\obj_fblock_4</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room5</room>
     <room>rooms\room6</room>
+    <room>rooms\room5</room>
     <room>rooms\room4</room>
     <room>rooms\room3</room>
   </rooms>
