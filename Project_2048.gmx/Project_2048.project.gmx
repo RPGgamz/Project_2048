@@ -6,30 +6,46 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_wall_mask</sprite>
-    <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\spr_wall_1</sprite>
-    <sprite>sprites\spr_wall_2</sprite>
-    <sprite>sprites\spr_wall_3</sprite>
-    <sprite>sprites\spr_wall_4</sprite>
-    <sprite>sprites\spr_block_mask</sprite>
-    <sprite>sprites\spr_block</sprite>
-    <sprite>sprites\spr_block_2</sprite>
-    <sprite>sprites\spr_block_3</sprite>
-    <sprite>sprites\spr_block_4</sprite>
-    <sprite>sprites\spr_block_0</sprite>
-    <sprite>sprites\spr_trash_0</sprite>
-    <sprite>sprites\spr_trash_1</sprite>
-    <sprite>sprites\spr_trash_2</sprite>
-    <sprite>sprites\spr_trash_3</sprite>
-    <sprite>sprites\spr_trash_4</sprite>
-    <sprite>sprites\spr_fblock</sprite>
-    <sprite>sprites\spr_fblock_2</sprite>
-    <sprite>sprites\spr_fblock_3</sprite>
-    <sprite>sprites\spr_fblock_4</sprite>
+    <sprite>sprites\spr_square_mask</sprite>
+    <sprites name="block">
+      <sprite>sprites\spr_block_0</sprite>
+      <sprite>sprites\spr_block</sprite>
+      <sprite>sprites\spr_block_2</sprite>
+      <sprite>sprites\spr_block_3</sprite>
+      <sprite>sprites\spr_block_4</sprite>
+      <sprite>sprites\spr_block_5</sprite>
+    </sprites>
+    <sprites name="wall">
+      <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_wall_1</sprite>
+      <sprite>sprites\spr_wall_2</sprite>
+      <sprite>sprites\spr_wall_3</sprite>
+      <sprite>sprites\spr_wall_4</sprite>
+      <sprite>sprites\spr_wall_5</sprite>
+    </sprites>
+    <sprites name="trash">
+      <sprite>sprites\spr_trash_0</sprite>
+      <sprite>sprites\spr_trash_1</sprite>
+      <sprite>sprites\spr_trash_2</sprite>
+      <sprite>sprites\spr_trash_3</sprite>
+      <sprite>sprites\spr_trash_4</sprite>
+      <sprite>sprites\spr_trash_5</sprite>
+    </sprites>
+    <sprites name="freeze blocks">
+      <sprite>sprites\spr_fblock</sprite>
+      <sprite>sprites\spr_fblock_2</sprite>
+      <sprite>sprites\spr_fblock_3</sprite>
+      <sprite>sprites\spr_fblock_4</sprite>
+      <sprite>sprites\spr_fblock_5</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\bg_white</background>
+    <background>background\bg_white_right</background>
+    <background>background\bg_white_left</background>
+    <background>background\bg_white_up</background>
+    <background>background\bg_white_down</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -48,6 +64,7 @@
       <object>objects\obj_solid_2</object>
       <object>objects\obj_solid_3</object>
       <object>objects\obj_solid_4</object>
+      <object>objects\obj_solid_5</object>
     </objects>
     <objects name="trash lvls">
       <object>objects\obj_trash_0</object>
@@ -55,25 +72,29 @@
       <object>objects\obj_trash_2</object>
       <object>objects\obj_trash_3</object>
       <object>objects\obj_trash_4</object>
+      <object>objects\obj_trash_5</object>
     </objects>
     <objects name="block lvls">
       <object>objects\obj_block_0</object>
       <object>objects\obj_block_1</object>
       <object>objects\obj_block_2</object>
       <object>objects\obj_block_3</object>
+      <object>objects\obj_block_4</object>
+      <object>objects\obj_block_5</object>
     </objects>
     <objects name="frozen block lvls">
       <object>objects\obj_fblock_1</object>
       <object>objects\obj_fblock_2</object>
       <object>objects\obj_fblock_3</object>
       <object>objects\obj_fblock_4</object>
+      <object>objects\obj_fblock_5</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room7</room>
-    <room>rooms\room5</room>
+    <room>rooms\room_freeze</room>
+    <room>rooms\room_tutorial_agtigt</room>
+    <room>rooms\room_lvl_0_blocks</room>
     <room>rooms\room6</room>
-    <room>rooms\room4</room>
     <room>rooms\room3</room>
   </rooms>
   <help>
