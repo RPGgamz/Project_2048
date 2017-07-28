@@ -66,8 +66,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room6</room>
     <room>rooms\room5</room>
+    <room>rooms\room6</room>
     <room>rooms\room4</room>
     <room>rooms\room3</room>
   </rooms>
