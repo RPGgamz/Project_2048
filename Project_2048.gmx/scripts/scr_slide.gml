@@ -5,8 +5,28 @@
 tick_count ++;
 if (tick_count = 4) tick_count = 0;
 
-//If tick count is 0, check which blocks should stop
+//If tick count is 0, combine blocks, and check which blocks should stop
 if (tick_count = 0) {
+    //Combine blocks
+    for (var i = 0; i < instance_number(obj_block)-1; i += 1) {
+        var mario = instance_find(obj_block, i);
+        for (var j = i+1; j < instance_number(obj_block); j += 1) {
+            var broman = instance_find(obj_block, j);
+            if !(broman.lvl = mario.lvl && broman.x = mario.x && broman.y = mario.y) continue;
+            with (broman) instance_destroy();
+            mario.stop = true;
+            mario.combine_lock = true;
+            mario.frozen = false;
+            mario.lvl += 1;
+            mario.sprite_index = spr_block
+            mario.image_index = mario.lvl - 1;
+        }
+    }
+    //Do trash things
+    with (obj_trash) {
+        var broman = instance_position(x, y, obj_block);
+        with (broman) instance_destroy();
+    }
     //All blocks collision
     with (obj_block) {
         if (!stop) {
@@ -26,7 +46,7 @@ if (tick_count = 0) {
                 case "down":
                     var dx = 0
                     var dy = +16
-                    break;        
+                    break;
             }
             
             stop = scr_stop_check(dx, dy, id); //Maybe just move this into the switch?
@@ -47,7 +67,7 @@ if (tick_count = 0) {
     }
 }
 
-//Move all blocks
+//Move all blocks every frame. This is the only thing that happens when !(tick_count=0)
 with (obj_block){
     if (!stop){
         switch (obj_control.slide_dir) {
@@ -65,28 +85,6 @@ with (obj_block){
                 break;
         }
     }
-}
-
-//Combine blocks
-for (var i = 0; i < instance_number(obj_block)-1; i += 1) {
-    var mario = instance_find(obj_block, i);
-    for (var j = i+1; j < instance_number(obj_block); j += 1) {
-        var broman = instance_find(obj_block, j);
-        if !(broman.lvl = mario.lvl && broman.x = mario.x && broman.y = mario.y) continue;
-        with (broman) instance_destroy();
-        mario.stop = true;
-        mario.combine_lock = true;
-        mario.frozen = false;
-        mario.lvl += 1;
-        mario.sprite_index = spr_block
-        mario.image_index = mario.lvl - 1;
-    }
-}
-
-//Do trash things
-with (obj_trash) {
-    var broman = instance_position(x, y, obj_block);
-    with (broman) instance_destroy();
 }
 
 #define scr_stop_check
