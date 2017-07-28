@@ -29,6 +29,7 @@
 image_speed = 0;
 stop = false;
 combine_lock = false;
+mask_index = spr_block_mask;
 </string>
           </argument>
         </arguments>

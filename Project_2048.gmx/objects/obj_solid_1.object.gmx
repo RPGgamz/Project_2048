@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lvl = 1;
+            <string>event_inherited();
+lvl = 1;
 </string>
           </argument>
         </arguments>
