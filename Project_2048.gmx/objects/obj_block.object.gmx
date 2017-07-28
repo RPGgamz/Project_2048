@@ -30,7 +30,7 @@ stop = false;
 combine_lock = false;
 frozen = false;
 
-mask_index = spr_block_mask;
+mask_index = spr_square_mask;
 image_speed = 0;
 
 </string>
