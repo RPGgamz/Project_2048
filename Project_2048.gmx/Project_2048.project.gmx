@@ -17,6 +17,7 @@
     </sprites>
     <sprites name="wall">
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_wall_0</sprite>
       <sprite>sprites\spr_wall_1</sprite>
       <sprite>sprites\spr_wall_2</sprite>
       <sprite>sprites\spr_wall_3</sprite>
@@ -58,7 +59,7 @@
     <object>objects\obj_trash</object>
     <object>objects\obj_block</object>
     <object>objects\obj_control</object>
-    <objects name="solid lvls">
+    <objects name="gate lvls">
       <object>objects\obj_solid_0</object>
       <object>objects\obj_solid_1</object>
       <object>objects\obj_solid_2</object>
@@ -91,9 +92,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_freeze</room>
     <room>rooms\room_tutorial_agtigt</room>
     <room>rooms\room_lvl_0_blocks</room>
+    <room>rooms\room_freeze</room>
     <room>rooms\room6</room>
     <room>rooms\room3</room>
   </rooms>
