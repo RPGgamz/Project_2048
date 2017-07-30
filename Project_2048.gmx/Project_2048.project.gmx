@@ -53,12 +53,20 @@
     <script>scripts\scr_wait.gml</script>
     <script>scripts\scr_slide.gml</script>
     <script>scripts\scr_post_slide.gml</script>
+    <script>scripts\scr_display_write_specs.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_big</font>
+    <font>fonts\font_middle</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_solid</object>
     <object>objects\obj_trash</object>
     <object>objects\obj_block</object>
     <object>objects\obj_control</object>
+    <object>objects\obj_display</object>
+    <object>objects\obj_camera</object>
+    <object>objects\obj_main_menu</object>
     <objects name="gate lvls">
       <object>objects\obj_solid_0</object>
       <object>objects\obj_solid_1</object>
@@ -92,9 +100,44 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_tutorial_agtigt</room>
-    <room>rooms\room_lvl_0_blocks</room>
-    <room>rooms\room_freeze</room>
+    <room>rooms\rm_init</room>
+    <room>rooms\rm_main_menu</room>
+    <rooms name="World 1">
+      <room>rooms\rm_1_1</room>
+      <room>rooms\rm_1_2</room>
+      <room>rooms\rm_1_3</room>
+      <room>rooms\rm_1_4</room>
+      <room>rooms\rm_1_5</room>
+      <room>rooms\rm_1_6</room>
+      <room>rooms\rm_1_7</room>
+      <room>rooms\rm_1_8</room>
+      <room>rooms\rm_1_9</room>
+    </rooms>
+    <rooms name="World 2">
+      <room>rooms\rm_2_1</room>
+      <room>rooms\rm_2_2</room>
+      <room>rooms\rm_2_3</room>
+      <room>rooms\rm_2_4</room>
+      <room>rooms\rm_2_5</room>
+      <room>rooms\rm_2_6</room>
+      <room>rooms\rm_2_7</room>
+    </rooms>
+    <rooms name="World 3">
+      <room>rooms\rm_3_1</room>
+      <room>rooms\rm_3_2</room>
+      <room>rooms\rm_3_3</room>
+      <room>rooms\rm_3_4</room>
+      <room>rooms\rm_3_5</room>
+      <room>rooms\rm_3_6</room>
+      <room>rooms\rm_3_7</room>
+      <room>rooms\rm_3_8</room>
+      <room>rooms\rm_3_9</room>
+    </rooms>
+    <rooms name="Drafts">
+      <room>rooms\room_tutorial_agtigt</room>
+      <room>rooms\room_lvl_0_blocks</room>
+      <room>rooms\room_freeze</room>
+    </rooms>
     <room>rooms\room6</room>
     <room>rooms\room3</room>
   </rooms>
