@@ -42,11 +42,23 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
-    <background>background\bg_white</background>
-    <background>background\bg_white_right</background>
+    <background>background\bg_white_square</background>
+    <background>background\bg_white_square_right</background>
+    <background>background\bg_white_square_left</background>
+    <background>background\bg_white_square_up</background>
+    <background>background\bg_white_square_down</background>
+    <background>background\bg_white_square_topright</background>
+    <background>background\bg_white_square_topleft</background>
+    <background>background\bg_white_square_botright</background>
+    <background>background\bg_white_square_botleft</background>
     <background>background\bg_white_left</background>
-    <background>background\bg_white_up</background>
+    <background>background\bg_white_right</background>
     <background>background\bg_white_down</background>
+    <background>background\bg_white_up</background>
+    <background>background\bg_white_topleft</background>
+    <background>background\bg_white_topright</background>
+    <background>background\bg_white_botleft</background>
+    <background>background\bg_white_botright</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -101,6 +113,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
+    <room>rooms\room33</room>
     <room>rooms\rm_main_menu</room>
     <rooms name="World 1">
       <room>rooms\rm_1_1</room>
@@ -133,13 +146,14 @@
       <room>rooms\rm_3_8</room>
       <room>rooms\rm_3_9</room>
     </rooms>
+    <room>rooms\rm_end</room>
     <rooms name="Drafts">
       <room>rooms\room_tutorial_agtigt</room>
       <room>rooms\room_lvl_0_blocks</room>
       <room>rooms\room_freeze</room>
+      <room>rooms\room6</room>
+      <room>rooms\room3</room>
     </rooms>
-    <room>rooms\room6</room>
-    <room>rooms\room3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
