@@ -111,6 +111,7 @@ obj_camera.view_zoom = 6;</code>
     <tile bgName="bg_white" x="30" y="30" w="12" h="12" xo="72" yo="0" id="10000971" name="inst_C10F9353" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_white" x="30" y="54" w="12" h="12" xo="72" yo="0" id="10000972" name="inst_52D346AE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_white" x="30" y="54" w="12" h="12" xo="60" yo="0" id="10000974" name="inst_D5717D51" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_trash_top_1" x="18" y="42" w="12" h="12" xo="36" yo="0" id="10001162" name="inst_7F545C46" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
