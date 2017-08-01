@@ -29,6 +29,7 @@
 lvl = 0
 
 end_of_level = false;
+invis = false;
 </string>
           </argument>
         </arguments>

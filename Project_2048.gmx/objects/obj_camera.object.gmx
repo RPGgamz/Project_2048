@@ -52,10 +52,12 @@ view_max_zoom = 10;
             <kind>1</kind>
             <string>///zoom view
 
+
 var zoom_speed = .1;
+/*
 view_zoom += keyboard_check(ord("T"))*zoom_speed;
 view_zoom -= keyboard_check(ord("G"))*zoom_speed;
-
+*/
 view_zoom = clamp(view_zoom, 1, view_max_zoom);
 
 view_wview = obj_display.ideal_width/view_zoom;

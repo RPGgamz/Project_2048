@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_square_mask</sprite>
+    <sprite>sprites\spr_wall</sprite>
     <sprites name="block">
       <sprite>sprites\spr_block_0</sprite>
       <sprite>sprites\spr_block</sprite>
@@ -15,9 +16,8 @@
       <sprite>sprites\spr_block_4</sprite>
       <sprite>sprites\spr_block_5</sprite>
     </sprites>
-    <sprites name="wall">
-      <sprite>sprites\spr_wall</sprite>
-      <sprite>sprites\spr_wall_0</sprite>
+    <sprites name="gate">
+      <sprite>sprites\spr_gate_0</sprite>
       <sprite>sprites\spr_wall_1</sprite>
       <sprite>sprites\spr_wall_2</sprite>
       <sprite>sprites\spr_wall_3</sprite>
@@ -39,26 +39,45 @@
       <sprite>sprites\spr_fblock_4</sprite>
       <sprite>sprites\spr_fblock_5</sprite>
     </sprites>
+    <sprite>sprites\spr_end</sprite>
+    <sprite>sprites\sprite26</sprite>
+    <sprite>sprites\sprite27</sprite>
+    <sprite>sprites\sprite28</sprite>
+    <sprite>sprites\sprite29</sprite>
+    <sprite>sprites\sprite30</sprite>
+    <sprite>sprites\sprite31</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
-    <background>background\bg_white_square</background>
-    <background>background\bg_white_square_right</background>
-    <background>background\bg_white_square_left</background>
-    <background>background\bg_white_square_up</background>
-    <background>background\bg_white_square_down</background>
-    <background>background\bg_white_square_topright</background>
-    <background>background\bg_white_square_topleft</background>
-    <background>background\bg_white_square_botright</background>
-    <background>background\bg_white_square_botleft</background>
-    <background>background\bg_white_left</background>
-    <background>background\bg_white_right</background>
-    <background>background\bg_white_down</background>
-    <background>background\bg_white_up</background>
-    <background>background\bg_white_topleft</background>
-    <background>background\bg_white_topright</background>
-    <background>background\bg_white_botleft</background>
-    <background>background\bg_white_botright</background>
+    <backgrounds name="Grid">
+      <background>background\bg_white</background>
+      <background>background\bg_white_square</background>
+    </backgrounds>
+    <backgrounds name="End level bar">
+      <background>background\bg_trash_top_1</background>
+      <background>background\bg_trash_top_2</background>
+      <background>background\bg_trash_top_3</background>
+      <background>background\bg_trash_top_4</background>
+      <background>background\bg_trash_top_5</background>
+    </backgrounds>
+    <backgrounds name="End level code">
+      <background>background\bg_trash_botright_1</background>
+      <background>background\bg_trash_botright_2</background>
+      <background>background\bg_trash_botleft_1</background>
+      <background>background\bg_trash_botleft_2</background>
+      <background>background\bg_trash_topright_1</background>
+      <background>background\bg_trash_topright_2</background>
+      <background>background\bg_trash_topleft_1</background>
+      <background>background\bg_trash_topleft_2</background>
+      <background>background\bg_trash_rightup_1</background>
+      <background>background\bg_trash_rightup_2</background>
+      <background>background\bg_trash_rightdown_1</background>
+      <background>background\bg_trash_rightdown_2</background>
+      <background>background\bg_trash_leftup_1</background>
+      <background>background\bg_trash_leftup_2</background>
+      <background>background\bg_trash_leftdown_2</background>
+      <background>background\bg_trash_leftdown_1</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -79,6 +98,7 @@
     <object>objects\obj_display</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_main_menu</object>
+    <object>objects\obj_end_level</object>
     <objects name="gate lvls">
       <object>objects\obj_solid_0</object>
       <object>objects\obj_solid_1</object>
@@ -113,7 +133,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\room33</room>
     <room>rooms\rm_main_menu</room>
     <rooms name="World 1">
       <room>rooms\rm_1_1</room>
@@ -122,9 +141,10 @@
       <room>rooms\rm_1_4</room>
       <room>rooms\rm_1_5</room>
       <room>rooms\rm_1_6</room>
-      <room>rooms\rm_1_7</room>
       <room>rooms\rm_1_8</room>
       <room>rooms\rm_1_9</room>
+      <room>rooms\rm_1_10</room>
+      <room>rooms\rm_1_11</room>
     </rooms>
     <rooms name="World 2">
       <room>rooms\rm_2_1</room>
@@ -135,6 +155,16 @@
       <room>rooms\rm_2_6</room>
       <room>rooms\rm_2_7</room>
     </rooms>
+    <room>rooms\rm_end</room>
+    <room>rooms\room52</room>
+    <room>rooms\room53</room>
+    <room>rooms\room54</room>
+    <room>rooms\room55</room>
+    <room>rooms\room57</room>
+    <room>rooms\room58</room>
+    <room>rooms\room56</room>
+    <room>rooms\room59</room>
+    <room>rooms\room60</room>
     <rooms name="World 3">
       <room>rooms\rm_3_1</room>
       <room>rooms\rm_3_2</room>
@@ -146,7 +176,6 @@
       <room>rooms\rm_3_8</room>
       <room>rooms\rm_3_9</room>
     </rooms>
-    <room>rooms\rm_end</room>
     <rooms name="Drafts">
       <room>rooms\room_tutorial_agtigt</room>
       <room>rooms\room_lvl_0_blocks</room>

@@ -27,25 +27,32 @@ if (tick_count = 0) {
         var broman = instance_position(x, y, obj_block);
         with (broman) instance_destroy();
     }
+    
+    //End level
+    with (obj_end_level) {
+        var broman = instance_position(x, y, obj_block);
+        with (broman) room_goto_next();
+    }
+    
     //All blocks collision
     with (obj_block) {
         if (!stop) {
             switch (obj_control.slide_dir){
                 case "left":
-                    var dx = -17
+                    var dx = -7
                     var dy = 0
                     break;
                 case "right":
-                    var dx = +16
+                    var dx = +6
                     var dy = 0
                     break;
                 case "up":
                     var dx = 0
-                    var dy = -17
+                    var dy = -7
                     break;
                 case "down":
                     var dx = 0
-                    var dy = +16
+                    var dy = +6
                     break;
             }
             
@@ -72,16 +79,16 @@ with (obj_block){
     if (!stop){
         switch (obj_control.slide_dir) {
             case "left":
-                x -= 8;
+                x -= 3;
                 break;
             case "right":
-                x += 8;
+                x += 3;
                 break;
             case "up":
-                y -= 8;
+                y -= 3;
                 break;
             case "down":
-                y += 8;
+                y += 3;
                 break;
         }
     }
