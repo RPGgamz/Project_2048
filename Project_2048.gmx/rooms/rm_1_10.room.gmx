@@ -9,7 +9,7 @@
   <speed>60</speed>
   <persistent>0</persistent>
   <colour>2894896</colour>
-  <showcolour>-1</showcolour>
+  <showcolour>0</showcolour>
   <code>obj_camera.x = 36;
 obj_camera.y = 36;
 obj_camera.view_zoom = 8;</code>
@@ -33,7 +33,7 @@ obj_camera.view_zoom = 8;</code>
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -62,17 +62,16 @@ obj_camera.view_zoom = 8;</code>
     <instance objName="obj_solid" x="24" y="60" name="inst_243470CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="36" y="60" name="inst_40D45757" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="60" y="24" name="inst_DAEA9BA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="24" y="24" name="inst_B0695C31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="36" y="12" name="inst_8DD58318" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="12" y="60" name="inst_0557BB85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="60" y="36" name="inst_0F78CB79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="60" y="60" name="inst_35633F3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="12" y="24" name="inst_45517119" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="60" y="12" name="inst_2B5F7AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="48" y="48" name="inst_62D2528C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_solid_2" x="48" y="24" name="inst_4FA773DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="24" y="48" name="inst_62D2528C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_end_level" x="48" y="12" name="inst_03549F14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_solid_1" x="48" y="36" name="inst_75602412" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid_1" x="24" y="36" name="inst_F9D70E11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid_1" x="36" y="48" name="inst_E26A6326" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_white_square" x="30" y="30" w="12" h="12" xo="0" yo="0" id="10000218" name="inst_7C8F9DB6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -102,8 +101,8 @@ obj_camera.view_zoom = 8;</code>
     <tile bgName="bg_white" x="6" y="54" w="12" h="12" xo="72" yo="0" id="10000684" name="inst_BDFE5695" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_white" x="6" y="6" w="12" h="12" xo="84" yo="0" id="10000685" name="inst_938A8411" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_white_square" x="42" y="18" w="12" h="12" xo="60" yo="0" id="10000784" name="inst_20FE06A6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_trash_top_2" x="42" y="18" w="12" h="12" xo="12" yo="0" id="10000785" name="inst_67B06800" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_trash_top_2" x="42" y="6" w="12" h="12" xo="36" yo="0" id="10000786" name="inst_AE33F1AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_trash_top_1" x="42" y="6" w="12" h="12" xo="36" yo="0" id="10001158" name="inst_CA93F9B4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_trash_top_1" x="42" y="18" w="12" h="12" xo="12" yo="0" id="10001159" name="inst_C39ED50B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
