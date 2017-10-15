@@ -8,6 +8,8 @@
   <sprites name="sprites">
     <sprite>sprites\spr_square_mask</sprite>
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_solid_thin_v</sprite>
+    <sprite>sprites\spr_solid_thin_h</sprite>
     <sprites name="block">
       <sprite>sprites\spr_block_0</sprite>
       <sprite>sprites\spr_block</sprite>
@@ -18,11 +20,11 @@
     </sprites>
     <sprites name="gate">
       <sprite>sprites\spr_gate_0</sprite>
-      <sprite>sprites\spr_wall_1</sprite>
-      <sprite>sprites\spr_wall_2</sprite>
-      <sprite>sprites\spr_wall_3</sprite>
-      <sprite>sprites\spr_wall_4</sprite>
-      <sprite>sprites\spr_wall_5</sprite>
+      <sprite>sprites\spr_gate_1</sprite>
+      <sprite>sprites\spr_gate_2</sprite>
+      <sprite>sprites\spr_gate_3</sprite>
+      <sprite>sprites\spr_gate_4</sprite>
+      <sprite>sprites\spr_gate_5</sprite>
     </sprites>
     <sprites name="trash">
       <sprite>sprites\spr_trash_0</sprite>
@@ -102,6 +104,11 @@
     <object>objects\obj_camera</object>
     <object>objects\obj_main_menu</object>
     <object>objects\obj_end_level</object>
+    <objects name="thin walls">
+      <object>objects\obj_solid_thin</object>
+      <object>objects\obj_solid_thin_v</object>
+      <object>objects\obj_solid_thin_h</object>
+    </objects>
     <objects name="gate lvls">
       <object>objects\obj_solid_0</object>
       <object>objects\obj_solid_1</object>
@@ -137,6 +144,7 @@
   <rooms name="rooms">
     <room>rooms\rm_init</room>
     <room>rooms\rm_main_menu</room>
+    <room>rooms\room38</room>
     <rooms name="World 1">
       <room>rooms\rm_1_1</room>
       <room>rooms\rm_1_2</room>
