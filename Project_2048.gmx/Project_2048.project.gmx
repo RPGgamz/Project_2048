@@ -50,7 +50,7 @@
     <sprite>sprites\sprite31</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\background0</background>
+    <background>background\bg_grid</background>
     <backgrounds name="Grid">
       <background>background\bg_white</background>
       <background>background\bg_white_square</background>
