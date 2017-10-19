@@ -144,6 +144,11 @@
   <rooms name="rooms">
     <room>rooms\rm_init</room>
     <room>rooms\rm_main_menu</room>
+    <room>rooms\room48</room>
+    <room>rooms\room49</room>
+    <room>rooms\room50</room>
+    <room>rooms\room51</room>
+    <room>rooms\room52</room>
     <rooms name="5x5 - 010">
       <room>rooms\room40</room>
       <room>rooms\room41</room>
