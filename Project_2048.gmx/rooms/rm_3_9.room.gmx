@@ -69,7 +69,7 @@ obj_camera.view_zoom = 8;</code>
     <instance objName="obj_fblock_3" x="36" y="60" name="inst_8DED86E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="24" y="60" name="inst_AD002A04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid_4" x="12" y="60" name="inst_5AEA6EA2" locked="0" code="invis = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_end_level" x="12" y="60" name="inst_8F181C05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_exit" x="12" y="60" name="inst_8F181C05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="72" y="12" name="inst_3E957C12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="72" y="24" name="inst_8EFA7A5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid" x="72" y="36" name="inst_5DD97C51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

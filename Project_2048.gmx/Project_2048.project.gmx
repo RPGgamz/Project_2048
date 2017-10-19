@@ -41,7 +41,8 @@
       <sprite>sprites\spr_fblock_4</sprite>
       <sprite>sprites\spr_fblock_5</sprite>
     </sprites>
-    <sprite>sprites\spr_end</sprite>
+    <sprite>sprites\spr_exit</sprite>
+    <sprite>sprites\spr_entrance</sprite>
     <sprite>sprites\sprite26</sprite>
     <sprite>sprites\sprite27</sprite>
     <sprite>sprites\sprite28</sprite>
@@ -103,7 +104,8 @@
     <object>objects\obj_display</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_main_menu</object>
-    <object>objects\obj_end_level</object>
+    <object>objects\obj_exit</object>
+    <object>objects\obj_entrance</object>
     <objects name="thin walls">
       <object>objects\obj_solid_thin</object>
       <object>objects\obj_solid_thin_v</object>
@@ -144,6 +146,12 @@
   <rooms name="rooms">
     <room>rooms\rm_init</room>
     <room>rooms\rm_main_menu</room>
+    <rooms name="Moving entrance test">
+      <room>rooms\met1</room>
+      <room>rooms\met2</room>
+      <room>rooms\met3</room>
+      <room>rooms\met4</room>
+    </rooms>
     <rooms name="5x5 - 010">
       <room>rooms\room40</room>
       <room>rooms\room41</room>
@@ -154,7 +162,6 @@
       <room>rooms\room46</room>
       <room>rooms\room47</room>
     </rooms>
-    <room>rooms\anto_test</room>
     <rooms name="World 1">
       <room>rooms\rm_1_1</room>
       <room>rooms\rm_1_2</room>

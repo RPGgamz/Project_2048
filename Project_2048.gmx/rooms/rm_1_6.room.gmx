@@ -72,7 +72,7 @@ obj_camera.view_zoom = 8;</code>
     <instance objName="obj_block" x="24" y="48" name="inst_E53C7D94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="36" y="36" name="inst_34567B8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid_2" x="48" y="60" name="inst_E240187A" locked="0" code="invis = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_end_level" x="48" y="60" name="inst_75DA32E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_exit" x="48" y="60" name="inst_75DA32E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_white_square" x="30" y="30" w="12" h="12" xo="0" yo="0" id="10000218" name="inst_7C8F9DB6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
