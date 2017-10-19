@@ -27,7 +27,7 @@ if (tick_count = 0) {
     }
     
     //Exit room
-    scr_exit_room_check();
+    if (scr_exit_room_check()) exit;
     
     //All blocks collision
     with (obj_block) {
@@ -89,50 +89,6 @@ with (obj_block){
     }
 }
 
-#define scr_exit_room_check
-
-//Prepare for exit
-var obj_control.exiting = false;
-var obj_control.target_room = rm_init;
-var obj_control.entrance = -1;
-var obj_control.broman = -1;
-//Check for exit
-with (obj_exit) {
-    var broman = instance_position(x, y, obj_block);
-    if instance_exists(broman) {
-        obj_control.exiting = true
-        obj_control.target_room = target_room;
-        obj_control.entrance = entrance;
-        obj_control.broman = broman;
-        show_debug_message("exiting!");
-    }
-}
-show_debug_message (exiting);
-//Exit and enter the other room
-if (exiting = true) {
-    show_debug_message ("herrow");
-    broman.persistent = true;
-    room_goto(target_room);
-    broman.persistent = false;
-    //Convert entrance number into id
-    var entrance_id;
-    with (obj_entrance) {
-        if (entrance = obj_control.entrance) {
-            obj_control.entrance_id = entrance;
-        }
-    }
-    broman.x = entrance_id.x
-    broman.y = entrance_id.y
-    obj_control.slide_dir = entrance_id.dir
-    obj_control.tick_count = -1;
-    with (obj_block) {
-        stop = true;
-    }
-    broman.stop = false
-}
-
-
-
 #define scr_stop_check
 ///scr_stop_check(dx, dy, obj)
 
@@ -159,3 +115,73 @@ with (argument2){
     }
     return (false);
 }
+#define scr_exit_room_check
+
+//Prepare for exit
+transition = instance_create(x,y,obj_variable_holder);
+var obj_control.exiting = false;
+var obj_control.target_room = rm_init;
+var obj_control.entrance = -1;
+var obj_control.broman = -1;
+//Check for exit
+with (obj_exit) {
+    var broman = instance_position(x, y, obj_block);
+    if instance_exists(broman) {
+        //if no entrance is given, just do everything here
+        if (entrance = 0) {
+            room_goto(target_room)
+            obj_control.state = scr_wait;
+            instance_destroy(obj_control.transition)
+            return true;
+        }
+        
+        obj_control.exiting = true;
+        obj_control.target_room = target_room;
+        obj_control.entrance = entrance;
+        (obj_control.transition).broman = broman;
+    }
+}
+//Exit and enter the other room
+if (exiting = true) {
+    var broman = transition.broman;
+    broman.persistent = true;
+    broman.alarm[0] = 1; /*contains: persistant=false*/
+    room_goto(target_room);
+    state = scr_entrance;
+    transition = instance_create(0,0,obj_variable_holder);
+    transition.entrance = entrance;
+    transition.broman = broman;
+    return true;
+}
+return false;
+
+#define scr_entrance
+//Get variables from obj_variable_holder "transition"
+var entrance = transition.entrance;
+var broman = transition.broman;
+instance_destroy(transition);
+
+//Find entrance_id
+var entrance_id = noone;
+for (var i = 0; i < instance_number(obj_entrance); i += 1) {
+    var ent = instance_find(obj_entrance, i);
+    if (entrance = ent.entrance) {
+        entrance_id = ent;
+        break;
+    }
+}
+
+//Setup the entrance
+broman.x = entrance_id.x
+broman.y = entrance_id.y
+slide_dir = entrance_id.dir
+tick_count = -1;
+for (var i = 0; i < instance_number(obj_block); i += 1) {
+    (instance_find(obj_block, i)).stop = true;
+}
+broman.stop = false
+
+//Slide
+state = scr_slide;
+scr_slide();
+

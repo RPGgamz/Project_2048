@@ -142,6 +142,7 @@
       <object>objects\obj_fblock_4</object>
       <object>objects\obj_fblock_5</object>
     </objects>
+    <object>objects\obj_variable_holder</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>

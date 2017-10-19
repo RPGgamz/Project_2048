@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>mask_index = spr_square_mask;
-target_room = rm_init;
-entrance = 1;
+target_room = room_next(room);
+entrance = 0;
 
 </string>
           </argument>
