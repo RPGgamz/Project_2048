@@ -95,7 +95,6 @@ obj_camera.view_zoom = 6;</code>
     <tile bgName="bg_grid" x="0" y="12" w="12" h="12" xo="0" yo="0" id="10001173" name="inst_B899C2B1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grid" x="0" y="24" w="12" h="12" xo="0" yo="0" id="10001174" name="inst_2CA8DF80" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grid" x="12" y="24" w="12" h="12" xo="0" yo="0" id="10001175" name="inst_3AD994FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_grid" x="24" y="24" w="12" h="12" xo="0" yo="0" id="10001176" name="inst_A403B84F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grid" x="36" y="36" w="12" h="12" xo="0" yo="0" id="10001177" name="inst_37A0D481" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grid" x="48" y="24" w="12" h="12" xo="0" yo="0" id="10001178" name="inst_8F7F103F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grid" x="12" y="36" w="12" h="12" xo="0" yo="0" id="10001179" name="inst_04B3A480" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
