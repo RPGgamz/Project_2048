@@ -84,7 +84,7 @@ obj_camera.view_zoom = 8;</code>
     <instance objName="obj_solid_thin_h" x="-6" y="36" name="inst_C49A9C53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid_thin_h" x="-18" y="48" name="inst_CBF9EBBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid_thin_h" x="-18" y="36" name="inst_640DCDA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_exit" x="-54" y="42" name="inst_2A73A0BB" locked="0" code="target_room = met1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_exit" x="-54" y="42" name="inst_2A73A0BB" locked="0" code="target_room = met1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_entrance" x="102" y="18" name="entrance_1" locked="0" code="dir = &quot;left&quot;;&#xA;entrance = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid_thin_v" x="72" y="30" name="inst_07705D70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solid_thin_v" x="72" y="6" name="inst_39C3CCA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -184,4 +184,3 @@ broman.stop = false
 //Slide
 state = scr_slide;
 scr_slide();
-
